@@ -158,6 +158,7 @@
                         .topnav a.icon {
                             float: right;
                             display: block;
+                            font-size: 1.1rem;
                         }
                     }
                     
@@ -629,5 +630,11 @@
                     }
                     
                     .w3-content {
-                        width: 60%;
+                        width: 100%;
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .w3-content {
+                            width: 50%;
+                        }
                     }
