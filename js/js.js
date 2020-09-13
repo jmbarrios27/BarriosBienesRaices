@@ -1,3 +1,4 @@
+//Function for the Navbar Burguer Button
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,6 +8,7 @@ function myFunction() {
     }
 }
 
+//functions for the image slides
 var slideIndex = 1;
 showDivs(slideIndex);
 
