@@ -185,8 +185,12 @@ header {
     .topnav a.icon {
         float: right;
         display: block;
-        font-size: 1.1rem;
     }
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
