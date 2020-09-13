@@ -768,3 +768,13 @@ header {
         width: 50%;
     }
 }
+
+.boton-contacto-propiedades a {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .boton-contacto-propiedades a {
+        display: inline-block;
+    }
+}
