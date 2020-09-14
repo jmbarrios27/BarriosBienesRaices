@@ -268,7 +268,8 @@ header {
 .texto-mapa .fa-whatsapp:hover,
 .texto-mapa .fa-envelope:hover {
     text-decoration: none;
-    color: black;
+    transform: scale(2);
+    transition: all 0.5s ease-in;
 }
 
 
