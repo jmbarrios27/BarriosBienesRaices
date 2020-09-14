@@ -633,6 +633,44 @@ header {
 }
 
 
+/*iconos redes sociales index*/
+
+
+/*footer*/
+
+.redes-sociales-icones-index {
+    text-align: center;
+}
+
+.redes-sociales-icones-index .fa-facebook {
+    color: blue;
+    font-size: 2rem;
+}
+
+.redes-sociales-icones-index .fa-envelope {
+    color: darkcyan;
+    font-size: 2rem;
+}
+
+.redes-sociales-icones-index .fa-instagram {
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+.redes-sociales-icones-index .fa-whatsapp {
+    color: green;
+    font-size: 2rem;
+}
+
+.redes-sociales-icones-index .fa-facebook:hover,
+.redes-sociales-icones-index .fa-envelope:hover,
+.redes-sociales-icones-index .fa-instagram:hover,
+.redes-sociales-icones-index .fa-whatsapp:hover {
+    transform: scale(1.5) rotate(3deg);
+    transition: all 0.5s ease;
+}
+
+
 /*footer*/
 
 .site-footer {
