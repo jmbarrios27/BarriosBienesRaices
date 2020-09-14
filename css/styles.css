@@ -237,6 +237,16 @@ header {
     transition: all 0.5s ease;
 }
 
+.fa-map-marker-alt {
+    font-size: 2rem;
+    color: orangered;
+}
+
+.fa-map-marker-alt:hover {
+    transform: scale(1.5);
+    transition: all .5s ease-in-out;
+}
+
 .texto-mapa .fa-facebook {
     color: blue;
 }
@@ -768,6 +778,8 @@ header {
     .texto-mapa p {
         font-size: 0.9rem;
         line-height: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .contenido-mapas {
         display: grid;
