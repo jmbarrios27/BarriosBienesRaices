@@ -333,7 +333,7 @@ header {
     background-size: cover;
     background-position: center bottom;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
 }
 
 @media (min-width: 768px) {
@@ -351,7 +351,7 @@ header {
     text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
-    padding-top: 6rem;
+    padding-top: 4rem;
     width: 100%;
     color: black;
     font-weight: bold;
@@ -361,6 +361,7 @@ header {
     font-size: 1rem;
     margin: 0 15px 0 15px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -375,6 +376,23 @@ header {
     }
     .contenido-background-index h1 {
         font-size: 1.8rem;
+    }
+}
+
+.background-index-image a {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+    background-color: #222222;
+}
+
+.background-index-image a:hover {
+    background-color: beige;
+}
+
+@media (min-width: 768px) {
+    .background-index-image a {
+        padding: 20px 50px 20px 50px;
     }
 }
 
@@ -609,6 +627,10 @@ header {
 .site-footer {
     background-color: black;
     margin: 0;
+}
+
+.site-footer a {
+    text-transform: uppercase;
 }
 
 .contendor-footer {
