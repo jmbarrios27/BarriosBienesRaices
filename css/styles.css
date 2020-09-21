@@ -766,6 +766,10 @@
         max-width: 95%;
     }
     
+    .anuncio-info p {
+        line-height: 0.3rem;
+    }
+    
     @media (min-width: 768px) {
         .contenido-centrado {
             max-width: 50%;
