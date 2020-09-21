@@ -195,6 +195,7 @@ header {
 .fa-bars {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding-right: .5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -231,7 +232,8 @@ header {
 
 .fa-facebook:hover,
 .fa-instagram:hover,
-.fa-whatsapp:hover {
+.fa-whatsapp:hover,
+.fa-envelope:hover {
     height: 1rem;
     color: red;
     transition: all 0.5s ease;
@@ -415,6 +417,10 @@ header {
 
 
 /*Anuncios*/
+
+.anuncios-principal {
+    margin-top: 2rem;
+}
 
 .contenedor-anuncios {
     display: grid;
@@ -904,5 +910,40 @@ header {
 @media (min-width: 768px) {
     .boton-contacto-propiedades a {
         display: inline-block;
+    }
+}
+
+
+/*Social Media Navabar*/
+
+.social-media-navbar {
+    background: rgb(36, 9, 0);
+    background: linear-gradient(90deg, rgba(36, 9, 0, 1) 0%, rgba(125, 42, 22, 1) 0%, rgba(0, 0, 0, 0.9668242296918768) 0%, rgba(196, 185, 193, 1) 49%, rgba(254, 25, 0, 1) 100%);
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2rem;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    font-size: .5rem;
+    padding-top: 0;
+}
+
+#anuncios-social-navbar {
+    position: static;
+    /*Static just for the Anuncios Page for all devices*/
+}
+
+@media (min-width: 768px) {
+    .social-media-navbar {
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .social-media-navbar {
+        padding-right: 8rem;
+        position: static;
     }
 }
