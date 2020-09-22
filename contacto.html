@@ -81,73 +81,37 @@
     <br>
     <br>
     <!---Main--->
-    <div class="centrar-centrado seccion">
-        <h2 class="fw-300 centrar-texto">Completar formulario de Contacto</h2>
-        <!--Inicio de formulario-->
-        <main class="container seccion contenido-centrado formulario">
+    <form action="mail.php" method="POST" class="container formulario-principal">
+        <p>Nombre</p> <input type="text" name="name">
+        <p>Email</p> <input type="text" name="email">
+        <p>Teléfono</p> <input type="text" name="phone">
 
-            <form class="contacto" action="enviar2.php">
-                <fieldset>
-                    <h4 class="centrar-texto fw-300"><b>INFORMACIÓN PERSONAL</b></h4>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Nombre y Apellido">
-
-                    <label for="email">E-mail: </label>
-                    <input type="email" id="email" placeholder="Correo electrónico" required>
-
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" placeholder="Teléfono - Celular" required>
-
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" placeholder="Asunto">
-
-                    <label for="mensaje">Mensaje: </label>
-                    <textarea id="mensaje"></textarea>
-
-                </fieldset>
-                <br>
-
-                <fieldset>
-                    <h4 class="centrar-texto fw-300"><b>INFORMACIÓN SOBRE LA PROPIEDAD</b></h4>
-                    <label for="opciones">Vende o Compra</label>
-                    <select id="opciones">
-                <option value="" disabled selected>-- Seleccione --</option>
-                <option value="Compra">Compra</option>
-                <option value="Vende">Vende</option>
-            </select>
-
-                    <label for="cantidad">Cantidad (opcional):</label>
-                    <input type="number" min="0" step="5">
-                </fieldset>
-                <br>
-                <fieldset>
-                    <h4 class="centrar-texto fw-300"><b>CONTACTO</b></h4>
-
-                    <p>Como desea ser Contactado:</p>
-                    <!--Radio es para checkbox-->
-                    <div class="forma-contacto">
-                        <label for="telefono">Teléfono</label>
-                        <input type="radio" name="contacto" value="telefono" id="telefono">
-
-                        <label for="correo">E-mail</label>
-                        <input type="radio" name="contacto" value="correo" id="correo">
-                    </div>
-
-                    <p>Si eligió Teléfono, elija la fecha y la hora</p>
-                    <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha">
-
-                    <label for="hora">Hora:</label>
-                    <input type="time" id="hora" min="09:00" max="18:00">
+        <p>¿Desea ser contactacto mediante llamada?:</p>
+        Sí:<input type="checkbox" value="Yes" name="call"><br /> No:
+        <input type="checkbox" value="No" name="call"><br />
 
 
-                </fieldset>
 
-                <input type="submit" value="Enviar">
+        <p>Prioridad</p>
+        <select name="priority" size="1">
+        <option value="Low">Baja</option>
+        <option value="Normal">Normal</option>
+        <option value="High">Alta</option>
+        </select>
+        <br />
 
-            </form>
-        </main>
-    </div>
+        <p>Tipo de Consulta</p>
+        <select name="type" size="1">
+        <option value="update">Compra</option>
+        <option value="change">Venta</option>
+        <option value="addition">Alquiler</option>
+        <option value="new">Otro</option>
+        </select>
+        <br/>
+
+        <p>Mensaje</p><textarea name="message" rows="6" cols="25"></textarea><br />
+        <input type="submit" value="Send">
+    </form>
     <!--ultima seccion-->
     <footer class="site-footer seccion">
         <div class="container contenedor-footer">

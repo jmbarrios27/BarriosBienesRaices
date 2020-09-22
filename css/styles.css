@@ -308,6 +308,12 @@
         }
     }
     
+    @media (max-width: 767px) {
+        .tercer-icono {
+            display: none;
+        }
+    }
+    
     .icono {
         flex-basis: calc(33.3%-1rem);
         text-align: left;
@@ -850,6 +856,12 @@
         .formulario {
             display: grid;
             grid-template-columns: 100%;
+        }
+        @media (max-width: 320px) {
+            .formulario-principal {
+                display: grid;
+                grid-template-columns: 100%;
+            }
         }
         /*Responsive*/
         /*Large Devices*/
