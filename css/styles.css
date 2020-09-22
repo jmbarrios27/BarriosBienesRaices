@@ -859,8 +859,7 @@
         }
         @media (max-width: 320px) {
             .formulario-principal {
-                display: grid;
-                grid-template-columns: 100%;
+                font-size: 0.5rem;
             }
         }
         /*Responsive*/
