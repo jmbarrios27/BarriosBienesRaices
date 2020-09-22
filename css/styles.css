@@ -298,6 +298,7 @@
     .iconos-nosotros {
         display: grid;
         grid-template-columns: 100%;
+        padding-right: 1rem;
     }
     
     @media (min-width:768px) {
@@ -927,4 +928,9 @@
             padding-right: 8rem;
             position: static;
         }
+    }
+    
+    .info-us p {
+        justify-content: center;
+        padding-right: 1rem;
     }
