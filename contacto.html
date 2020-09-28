@@ -22,7 +22,7 @@
         <div class="social-media-navbar" id="social-navbar">
             <a href=""></a>
             <a href="https://www.facebook.com/Barrios-Bienes-Raices-2478405368847329" target="_blank"><i class="fab fa-facebook" id="facebookindex"></i></a>
-            <a href="mailto:max@barriosbienesraices.com"><i class="fas fa-envelope" id="fixedevelope"></i></a>
+            <a href="mailto:administracion@barriosbienesraices.com"><i class="fas fa-envelope" id="fixedevelope"></i></a>
             <a href="https://www.instagram.com/barriosbienes/?hl=es" target="_blank"><i class="fab fa-instagram" id="fixedinstagram"></i></a>
             <a href="tel:+50762444700"><i class="fab fa-whatsapp" id="fixedwhatsapp"></i></a>
         </div>
@@ -70,7 +70,7 @@
 
                 <h6><b>CONTACTO</b></h6>
                 <p><a href="https://www.facebook.com/Barrios-Bienes-Raices-2478405368847329" target="_blank"><i class="fab fa-facebook"></i></a> Barrios Bienes Raices</p>
-                <p><a href="mailto:max@barriosbienesraices.com"><i class="fas fa-envelope"></i></a>max@barriosbienesraices.com</p>
+                <p><a href="mailto:administracion@barriosbienesraices.com"><i class="fas fa-envelope"></i></a>administracion@barriosbienesraices.com</p>
                 <p><a href="https://www.instagram.com/barriosbienes/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a> barriosbienes</p>
                 <p><a href="tel:+50762444700"><i class="fab fa-whatsapp"></i></a><b>Teléfono: </b> 6244-4700</p>
             </div>
@@ -81,22 +81,29 @@
     <br>
     <br>
     <!---Main--->
+    <h2 class="fw-300 contaienr">FORMULARIO DE CONTACTO</h2>
     <form action="mail.php" method="POST" class="container formulario-principal">
-        <p>Nombre</p> <input type="text" name="name">
+        <p>Nombre Completo</p> <input type="text" name="name">
         <p>Email</p> <input type="text" name="email">
         <p>Teléfono</p> <input type="text" name="phone">
 
-        <p>¿Desea ser contactacto mediante llamada?:</p>
-        Sí:<input type="checkbox" value="Yes" name="call"><br /> No:
-        <input type="checkbox" value="No" name="call"><br />
+
+
+        <p>Cómo desea ser contactado?</p>
+        <select name="tipocontacto" size="1">
+        <option value="Chat">Whatsapp</option>
+        <option value="Llamada">Llamada</option>
+        <option value="Correo Electrónico">Correo Electrónico</option>
+        </select>
+        <br/>
 
 
 
-        <p>Urgencía.</p>
-        <select name="priority" size="1">
-        <option value="baja">Baja</option>
-        <option value="Normal">Normal</option>
-        <option value="alta">Alta</option>
+        <p>Estatus Laboral</p>
+        <select name="status" size="1">
+        <option value="asalariado">Asalariado</option>
+        <option value="independiente">Independiente</option>
+        <option value="alta">Otro</option>
         </select>
         <br/>
 
@@ -110,7 +117,7 @@
         <br/>
 
         <p>Mensaje</p><textarea name="message" rows="6" cols="25"></textarea><br/>
-        <input type="submit" value="Send">
+        <input type="submit" value="Enviar">
     </form>
     <!--ultima seccion-->
     <footer class="site-footer seccion">
